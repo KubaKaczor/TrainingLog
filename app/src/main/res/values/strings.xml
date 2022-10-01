@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TrainingLog</string>
+    <string name="title_history">Historia</string>
+    <string name="title_training">Trening</string>
+    <string name="title_exercises">Ćwiczenia</string>
+
+    <string name="place_holder_time">00:00:00</string>
+    <string name="reset">Reset</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+</resources>

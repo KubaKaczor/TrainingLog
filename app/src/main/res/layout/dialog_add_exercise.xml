@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="350dp"
+    android:minHeight="200dp"
+    android:background="@drawable/rounded_frame"
+    android:clipToOutline="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dodaj ćwiczenie"
+                android:textColor="@color/black"
+                android:textSize="23sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/black"
+                 />
+
+
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nazwa:"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+            <EditText
+                android:id="@+id/etExerciseName"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="8dp"
+                android:inputType="textMultiLine"
+                android:gravity="start|top"
+                android:textSize="22sp"
+                android:background="@drawable/rounded_edittext"/>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:background="@drawable/shape_button_rounded"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Anuluj"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btnAddExercise"
+                    android:background="@drawable/shape_button_rounded"
+                    android:layout_width="0dp"
+                    android:text="Dodaj"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
